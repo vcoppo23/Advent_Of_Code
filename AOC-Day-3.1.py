@@ -351,7 +351,7 @@ def sled(start, y):
         total += 1
     else:
         pass
-# 
+# Goes through all of the Sleds positions
 while y < rows:
     sled(x, y)
     x += 3    
