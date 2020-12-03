@@ -1001,22 +1001,19 @@ passtr = """5-9 g: ggccggmgn
 """
 
 passlist = (passtr.splitlines(0))
-#print (passlist[1])
 count = 0
 total = 0
 length = (len(passlist))
 def passchecker(code):
     x = code.split()
-    #print (x)
     numrange = (x[0].split('-'))
     letter = (x[1].split(':'))
     letcount = x[2].count(letter[0])
-    #print (letcount)
     if (int(numrange[0])) <= letcount <= (int(numrange[1])):
         return True
     else:
         return False
-#passchecker(passlist[1])
+
 while count != length:
     if passchecker(passlist[count]) == True:
         total += 1
